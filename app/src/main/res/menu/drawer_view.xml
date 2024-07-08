@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/homeFragment"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/profileFragment"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/progressTrackerFragment"
+            android:icon="@drawable/ic_workout"
+            android:title="Progress Tracker" />
+        <item
+            android:id="@+id/settingsFragment"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings" />
+        <item
+            android:id="@+id/addExerciseFragment"
+            android:icon="@drawable/ic_workout"
+            android:title="Add Exercise" />
+        <item
+            android:id="@+id/editProfileFragment"
+            android:icon="@drawable/ic_profile"
+            android:title="Edit Profile" />
+        <item
+            android:id="@+id/exerciseDetailFragment"
+            android:icon="@drawable/ic_workout"
+            android:title="Exercise Details" />
+        <item
+            android:id="@+id/exerciseListFragment"
+            android:icon="@drawable/ic_workout"
+            android:title="Exercise List" />
+    </group>
+</menu>

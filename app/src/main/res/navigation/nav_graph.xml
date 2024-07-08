@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="edu.msudenver.cs3013.project1_s24.HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="edu.msudenver.cs3013.project1_s24.ProfileFragment"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/progressTrackerFragment"
+        android:name="edu.msudenver.cs3013.project1_s24.ProgressTrackerFragment"
+        tools:layout="@layout/fragment_progress_tracker" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="edu.msudenver.cs3013.project1_s24.SettingsFragment"
+        tools:layout="@layout/fragment_settings">
+        <action
+            android:id="@+id/action_settingsFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addExerciseFragment"
+        android:name="edu.msudenver.cs3013.project1_s24.AddExerciseFragment"
+        tools:layout="@layout/fragment_add_exercise">
+        <action
+            android:id="@+id/action_addExerciseFragment_to_exerciseListFragment"
+            app:destination="@id/exerciseListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="edu.msudenver.cs3013.project1_s24.EditProfileFragment"
+        tools:layout="@layout/fragment_edit_profile">
+        <action
+            android:id="@+id/action_editProfileFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/exerciseDetailFragment"
+        android:name="edu.msudenver.cs3013.project1_s24.ExerciseDetailFragment"
+        tools:layout="@layout/fragment_exercise_detail" />
+
+    <fragment
+        android:id="@+id/exerciseListFragment"
+        android:name="edu.msudenver.cs3013.project1_s24.ExerciseListFragment"
+        tools:layout="@layout/fragment_exercise_list">
+        <action
+            android:id="@+id/action_exerciseListFragment_to_exerciseDetailFragment"
+            app:destination="@id/exerciseDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="edu.msudenver.cs3013.project1_s24.SignInFragment"
+        tools:layout="@layout/fragment_sign_in" />
+</navigation>

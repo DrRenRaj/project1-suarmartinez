@@ -1,3 +1,6 @@
 <resources>
+    <!-- Existing strings -->
     <string name="app_name">Project1_S24</string>
+    <!-- Add this new string -->
+    <string name="profile_picture">Profile Picture</string>
 </resources>
